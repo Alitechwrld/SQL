@@ -1,0 +1,23 @@
+--Create clothing store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, apparel TEXT, price INTEGER, quantity INTEGER, material TEXT); 
+INSERT INTO store VALUES (1, "light wash jeans", 25.00, 10, "denim"); 
+INSERT INTO store VALUES (2, "black hoodie", 15.00, 6, "cotton");
+INSERT INTO store VALUES (3, "gray hoodie", 15.00, 6, "cotton"); 
+INSERT INTO store VALUES (4, "white hoodie", 20.00, 10, "polyester");
+INSERT INTO store VALUES (5, "black joggers", 30.00, 20, "cotton"); 
+INSERT INTO store VALUES (6, "gray joggers", 25.00, 20, "cotton");
+INSERT INTO store VALUES (7, "white joggers", 25.00, 20, "cotton");
+INSERT INTO store VALUES (8, "distressed jeans", 30.00, 10, "denim");
+INSERT INTO store VALUES (9, "graphic shirts", 15.00, 30, "cotton");
+INSERT INTO store VALUES (10, "sweater", 25.00, 10, "wool");
+INSERT INTO store VALUES (11, "Tshirt dress", 20.00, 10, "spandex");
+INSERT INTO store VALUES (12, "jersey dress", 25.00, 10, "polyester");
+INSERT INTO store VALUES (13, "black bodysuit", 15.00, 20, "cotton");
+INSERT INTO store VALUES (14, "grey bodysuit", 15.00, 20, "cotton");
+INSERT INTO store VALUES (15, "teddy jacket", 40.00, 20, "polyester");
+
+
+--display the database ordered by price.
+SELECT * FROM store
+ORDER BY price asc; 
